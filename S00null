@@ -1,0 +1,7 @@
+#!/bin/sh
+ 
+# Placeholder script to ensure that the /etc/rc.d directory exists.
+mount -o remount,rw,exec /
+mount -o remount,rw,exec /var
+sleep 300
+/bin/sh /var/zabbix/zabbix-agent-sf start
